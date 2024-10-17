@@ -1,6 +1,16 @@
-// @author: Barata, Nicko James E. (BSCS-SD1A0)
-// VIBESWIFT CONCERT RESERVATIONS: YOUR SEAT, YOUR VIBE
-
+/**
+ *
+ *         My First Finals Project 
+ * [First Year, 1st Semester A.Y. 2023-2024]
+ * 
+ * VIBESWIFT: A CONCERT SEAT RESERVATIONS
+ *
+ * 
+ * This is my first final project, a console-based Concert Seat Reservation System 
+ * I created in my first semester. It allows users to reserve seats for concerts 
+ * and features an ASCII drawing of a stadium for visualization. 
+ *
+ */
 
 
 import java.util.Scanner;
@@ -16,7 +26,6 @@ public class Main {
     private static final Scanner scan = new Scanner(System.in);
     private static final Random random = new Random();
     private static HashMap<String, Map<String, Map<String, Integer>>> seatBlocks = new HashMap<>();
-    
    
     public static void main(String[] args) {
         
@@ -40,8 +49,6 @@ public class Main {
         // STARTING POINT
         mainMenu();
     }
-    
-    
     
     
     
@@ -90,8 +97,6 @@ public class Main {
     }
     
 
-    
-    
     
     // THE FOLLOWING METHODS ARE RESPONSIBLE FOR PROGRAM FLOW OF DIFFERENT MENU
     // 
@@ -284,7 +289,8 @@ public class Main {
             payment(block, seatnum);
         }
     }
-    
+
+        
     
     // Payment
     public static void payment(String block, int seatnum) {
@@ -336,8 +342,6 @@ public class Main {
     }
     
     
-    
-    
         
     // [1-2] View Available Seats
     public static void viewAvailableSeats(String block) {
@@ -381,6 +385,7 @@ public class Main {
         space(2);
     }
         
+
     
     // [2] Show Pricings
     public static void showPricings() {
@@ -406,9 +411,6 @@ public class Main {
         System.out.println("\tBook Your Tickets Now!\n\n");
         
     }
-    
-    
-    
     
     
     
@@ -495,6 +497,4 @@ public class Main {
         System.out.println("            \\\\_/_____________|____________\\__//");
         System.out.println("              ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯     \n\n\n");
     }         
-    
-    
 }
